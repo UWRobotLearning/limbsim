@@ -1,15 +1,12 @@
-# robolearn
+# limbsim
 
-~ *A fictional package used for robots by robots.* ~
-
-Clever words about what this is for.
+Limbsim is under **heavy development** but will ensure code on master is stable, linted, and tested.
 
 ## dev
 
 ```bash
 # clone the repo
-# TODO: change this to actual repo target, then delete this line
-git clone git@github.com:UWRobotLearning/robolearn.git
+git clone git@github.com:UWRobotLearning/limbsim.git
 
 # install deps
 pip install -e .[dev]
