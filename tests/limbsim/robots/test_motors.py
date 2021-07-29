@@ -3,10 +3,10 @@ from typing import Tuple
 
 import numpy as np
 import pytest
-from quadsim.robots.motors import MotorCommand
-from quadsim.robots.motors import MotorControlMode
-from quadsim.robots.motors import MotorGroup
-from quadsim.robots.motors import MotorModel
+from limbsim.robots.motors import MotorCommand
+from limbsim.robots.motors import MotorControlMode
+from limbsim.robots.motors import MotorGroup
+from limbsim.robots.motors import MotorModel
 
 
 @pytest.fixture
