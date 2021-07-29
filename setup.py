@@ -1,7 +1,7 @@
 from setuptools import find_packages
 from setuptools import setup
 
-requirements = ["numpy"]
+requirements = ["numpy", "pybullet"]
 
 dev_requirements = [
     "pytest",

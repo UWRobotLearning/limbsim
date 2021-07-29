@@ -1,6 +1,6 @@
 [run]
 source =
-  robolearn
+  limbsim
 
 omit =
   tests
