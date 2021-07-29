@@ -15,7 +15,6 @@ repos:
       - id: check-added-large-files
       - id: check-yaml
       - id: end-of-file-fixer
-      - id: trailing-whitespace
   - repo: https://github.com/pycqa/flake8
     rev: 3.9.1
     hooks:
@@ -24,7 +23,7 @@ repos:
     rev: v2.5.0
     hooks:
       - id: reorder-python-imports
-        args: [--application-directories=robolearn]
+        args: [--application-directories=limbsim]
   - repo: https://github.com/prettier/pre-commit
     rev: v2.1.2
     hooks:

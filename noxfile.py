@@ -4,8 +4,8 @@ from pathlib import Path
 import nox
 from nox.sessions import Session
 
-project = "robolearn"
-package = "robolearn"
+project = "limbsim"
+package = "limbsim"
 package_path = f"{project}/{package}"
 tests_path = f"{project}/tests"
 
@@ -59,4 +59,4 @@ def coverage_report(session: Session) -> None:
         session.run("coverage", "combine")
 
     session.run("coverage", "report")  # show coverage report in CLI
-    session.run("coverage", "xml")  # save report to xml for upload to codecov
+    session.run("coverage", "xml")  # save coverage report to xml for upload to codecov
