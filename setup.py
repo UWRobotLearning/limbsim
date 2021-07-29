@@ -21,8 +21,8 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     author=["UWRobotLearningLab"],
-    author_email=["rosario@cs.uw.edu"],
-    url="http://github.com/UWRobotLearning/repo-template",
+    author_email=["yxyang@berkeley.edu", "rosario@cs.uw.edu"],
+    url="http://github.com/UWRobotLearning/limbsim",
     install_requires=requirements,
     extras_require={"dev": dev_requirements},
 )
