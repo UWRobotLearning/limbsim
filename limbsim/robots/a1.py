@@ -1,4 +1,4 @@
-"""Base class for all robots."""
+"""The Robot class with A1 defaults."""
 from typing import Any
 from typing import Tuple
 
