@@ -5,16 +5,16 @@ Limbsim is under **heavy development** but will ensure code on master is stable,
 ## dev
 
 ```bash
-# clone the repo
+# 1. clone the repo
 git clone git@github.com:UWRobotLearning/limbsim.git
 
-# install deps
+# 2. install deps
 pip install -e .[dev]
 
-# install pre-commit hooks for linting before commits
+# 3. install pre-commit hooks for linting before commits
 pre-commit install
 
-# run lint & tests locally
+# 4. run lint & tests locally
 nox
 
 ```
