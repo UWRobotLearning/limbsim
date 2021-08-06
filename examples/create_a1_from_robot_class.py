@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     # Configure Simulator
     sim_conf = SimulatorConf(
-        show_gui=False,
+        connection_mode=pybullet.GUI,
         timestep=0.002,
         action_repeat=1,
         reset_time=3,
@@ -31,10 +31,7 @@ if __name__ == "__main__":
     )
 
     # Set up pybullet client
-    if sim_conf.show_gui:
-        p = bullet_client.BulletClient(connection_mode=pybullet.GUI)
-    else:
-        p = bullet_client.BulletClient(connection_mode=pybullet.DIRECT)
+    p = bullet_client.BulletClient(connection_mode=sim_conf.connection_mode)
     p.setAdditionalSearchPath(pybullet_data.getDataPath())
 
     # Create all motors manually

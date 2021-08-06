@@ -9,14 +9,11 @@ from limbsim.simulator import SimulatorConf
 
 if __name__ == "__main__":
 
-    sim_conf = SimulatorConf(show_gui=False, on_rack=True,)
+    sim_conf = SimulatorConf(connection_mode=pybullet.GUI, on_rack=True,)
     sim_conf.init_position = list(sim_conf.init_position)
 
     # Set up pybullet client
-    if sim_conf.show_gui:
-        p = bullet_client.BulletClient(connection_mode=pybullet.GUI)
-    else:
-        p = bullet_client.BulletClient(connection_mode=pybullet.DIRECT)
+    p = bullet_client.BulletClient(connection_mode=sim_conf.connection_mode)
     p.setAdditionalSearchPath(pybullet_data.getDataPath())
 
     motor1 = MotorModel(

@@ -15,21 +15,18 @@ if __name__ == "__main__":
 
     # Configure Simulator
     sim_conf = SimulatorConf(
-        show_gui=False,
+        connection_mode=pybullet.GUI,
         timestep=0.002,
         action_repeat=1,
         reset_time=3,
         num_solver_iterations=30,
         init_position=(0.0, 0.0, 0.32),
-        on_rack=False,
         init_rack_position=(0.0, 0.0, 1),
+        on_rack=False,
     )
 
     # Set up pybullet client
-    if sim_conf.show_gui:
-        p = bullet_client.BulletClient(connection_mode=pybullet.GUI)
-    else:
-        p = bullet_client.BulletClient(connection_mode=pybullet.DIRECT)
+    p = bullet_client.BulletClient(connection_mode=sim_conf.connection_mode)
     p.setAdditionalSearchPath(pybullet_data.getDataPath())
 
     robot = A1(pybullet_client=p, sim_conf=sim_conf,)
