@@ -11,6 +11,9 @@ git clone git@github.com:UWRobotLearning/limbsim.git
 # install deps
 pip install -e .[dev]
 
+# install pre-commit hooks for linting before commits
+pre-commit install
+
 # run lint & tests locally
 nox
 
