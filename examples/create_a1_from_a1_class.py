@@ -8,8 +8,8 @@ python examples/create_a1_from_a1_class.py
 import pybullet
 import pybullet_data
 from pybullet_utils import bullet_client
-from quadsim.robots.a1 import A1
-from quadsim.simulator import SimulatorConf
+from limbsim.robots.a1 import A1
+from limbsim.simulator import SimulatorConf
 
 if __name__ == "__main__":
 

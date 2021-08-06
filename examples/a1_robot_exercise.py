@@ -9,9 +9,9 @@ import numpy as np
 import pybullet
 import pybullet_data
 from pybullet_utils import bullet_client
-from quadsim.robots.a1 import A1
-from quadsim.robots.motors import MotorCommand
-from quadsim.simulator import SimulatorConf
+from limbsim.robots.a1 import A1
+from limbsim.robots.motors import MotorCommand
+from limbsim.simulator import SimulatorConf
 
 
 def get_action(t):

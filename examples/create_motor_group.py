@@ -1,6 +1,6 @@
-from quadsim.robots.motors import MotorControlMode
-from quadsim.robots.motors import MotorGroup
-from quadsim.robots.motors import MotorModel
+from limbsim.robots.motors import MotorControlMode
+from limbsim.robots.motors import MotorGroup
+from limbsim.robots.motors import MotorModel
 
 if __name__ == "__main__":
     motor1 = MotorModel(

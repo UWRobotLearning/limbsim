@@ -10,11 +10,11 @@ python examples/create_a1_from_robot_class.py
 import pybullet
 import pybullet_data
 from pybullet_utils import bullet_client
-from quadsim.robots.motors import MotorControlMode
-from quadsim.robots.motors import MotorGroup
-from quadsim.robots.motors import MotorModel
-from quadsim.robots.robot import Robot
-from quadsim.simulator import SimulatorConf
+from limbsim.robots.motors import MotorControlMode
+from limbsim.robots.motors import MotorGroup
+from limbsim.robots.motors import MotorModel
+from limbsim.robots.robot import Robot
+from limbsim.simulator import SimulatorConf
 
 if __name__ == "__main__":
 
