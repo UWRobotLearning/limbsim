@@ -1,11 +1,11 @@
 import pybullet
 import pybullet_data
-from pybullet_utils import bullet_client
 from limbsim.robots.motors import MotorControlMode
 from limbsim.robots.motors import MotorGroup
 from limbsim.robots.motors import MotorModel
 from limbsim.robots.robot import Robot
 from limbsim.simulator import SimulatorConf
+from pybullet_utils import bullet_client
 
 if __name__ == "__main__":
 

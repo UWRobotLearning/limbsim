@@ -8,10 +8,10 @@ import time
 import numpy as np
 import pybullet
 import pybullet_data
-from pybullet_utils import bullet_client
 from limbsim.robots.a1 import A1
 from limbsim.robots.motors import MotorCommand
 from limbsim.simulator import SimulatorConf
+from pybullet_utils import bullet_client
 
 
 def get_action(t):
