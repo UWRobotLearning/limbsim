@@ -58,6 +58,8 @@ class MotorModel:
     # TODO(yxyang): Complete documentation of motors with description of units
     # (e.g. rads/s etc.)
 
+
+    # TODO(romesco): maybe initialize to None defaults and throw error instead
     def __init__(
         self,
         name: str = None,
