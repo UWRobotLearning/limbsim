@@ -20,6 +20,7 @@ def get_action(t):
     mid_action = np.array([0.0, 0.9, -1.8] * 4)
     amplitude = np.array([0.0, 0.2, -0.4] * 4)
     freq = 1.0
+    import ipdb; ipdb.set_trace()
     return MotorCommand(
         desired_position=mid_action + amplitude * np.sin(2 * np.pi * freq * t)
     )
